@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",                // Usa ESNext para el sistema de módulos.
+    "jsx": "react-jsx",                // Para React 17+ sin necesidad de importar React explícitamente.
+    "moduleResolution": "node",        // Resolución de módulos estilo Node.js.
+    "strict": true,                    // Habilita todas las comprobaciones estrictas de TypeScript.
+    "esModuleInterop": true,           // Mejora la interoperabilidad de módulos.
+    "baseUrl": "./",                   // Configuración base para las rutas.
+    "paths": {
+      "*": ["src/*"]                   // Permite usar alias como 'src' para evitar rutas largas.
+    },
+    "target": "ESNext",                // Especifica el nivel de ECMAScript.
+    "lib": ["dom", "es2015"],          // Agrega las bibliotecas DOM y ES2015.
+    "skipLibCheck": true,              // Evita la comprobación de las bibliotecas.
+    "forceConsistentCasingInFileNames": true  // Fuerza la consistencia en las mayúsculas de los nombres de archivo.
+  },
+  "include": [
+    "src/**/*"  // Incluir todos los archivos dentro de la carpeta src
+  ]
+}
+
